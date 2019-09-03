@@ -1,11 +1,4 @@
-body {
-  
-}
-
-nav {
-  opacity: 0.7;
-}
-
+/*
 #background {
   position: fixed;
   height: 100%;
@@ -15,4 +8,49 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
+} */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  background: #253035;
+}
+
+strong { font-weight: 600; }
+
+a, a:hover, a:focus {
+  color: #495288;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+/* Navigation */
+nav {
+  opacity: 0.7;
+}
+
+/* Home page area */
+.home {
+  padding: 210px 0px;
+  /* color: #fff; */
+}
+.home .title-heading {
+  font-family: 'Bad Script', cursive;
+  margin-top: 25px;
+  font-size: 90px;
+}
+.home .description {
+  margin: 30px 0 10px 0;
+}
+
+/* About */
+.about-container{
+  padding: 210px 0px;
+}
+.about-container h1 {
+  font-family: 'Bad Script', cursive;
 }
