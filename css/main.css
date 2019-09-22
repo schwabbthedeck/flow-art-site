@@ -9,6 +9,11 @@
   background-size: cover;
   opacity: 0.9;
 } */
+/* General Styles */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -28,9 +33,14 @@ a, a:hover, a:focus {
   transition: all .3s;
 }
 
+.about-container h1, .art-section h1 {
+  font-family: 'Bad Script', cursive;
+}
+/* end general styles */
+
 /* Navigation */
 nav {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 /* Home page area */
@@ -49,8 +59,16 @@ nav {
 
 /* About */
 .about-container{
-  padding: 210px 0px;
+  padding: 75px 0px;
 }
-.about-container h1 {
-  font-family: 'Bad Script', cursive;
+
+/* art work sections */
+.art-section {
+  min-height: 8em;
+  padding: 75px 0px;
+  /* margin-top: 75px; */
+}
+
+.card {
+  color: #253035;
 }
