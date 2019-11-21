@@ -28,19 +28,33 @@ body {
 strong { font-weight: 600; }
 
 a, a:hover, a:focus {
-  color: #495288;
+  color: #8f9ce5;
   text-decoration: none;
   transition: all .3s;
 }
 
-.about-container h1, .art-section h1 {
+.about-container h1, .art-section h1, .contact-container h1 {
   font-family: 'Bad Script', cursive;
 }
 /* end general styles */
 
 /* Navigation */
 nav {
-  opacity: 0.9;
+  /* opacity: 0.9; */
+  /* background-color: rgba(255, 255, 255, 0.9); */
+}
+nav .collapse-social {
+  display: none;
+}
+nav .social-icons a{
+  color: rgba(0,0,0,0.5);
+  /* font-size: 24px; */
+}
+nav .social-icons span {
+  margin-left: 5px;
+}
+nav .social-icons span:hover a{
+  color: rgba(0,0,0,0.8);
 }
 
 /* Home page area */
@@ -71,4 +85,36 @@ nav {
 
 .card {
   color: #253035;
+}
+
+/* Contact */
+.contact-container {
+  padding: 75px 0px;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(248, 249, 250,0.75);
+  color: #253035;
+  margin-top: 80px;
+}
+footer .flex-center > a {
+  margin: 0px 15px;
+  color: rgba(0,0,0,0.5);
+}
+footer .flex-center > a:hover {
+  color: rgba(0,0,0,0.8);
+}
+footer .footer-copyright {
+  background-color: rgba(248,249,250,0.5);
+}
+
+/* Media Queries */
+@media screen and (max-width: 990px) {
+  .social-icons { 
+    display: none; 
+  }
+  nav .collapse-social {
+    display: list-item; 
+  }
 }
