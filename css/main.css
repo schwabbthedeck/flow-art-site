@@ -39,10 +39,10 @@ a, a:hover, a:focus {
 /* end general styles */
 
 /* Navigation */
-nav {
+/* nav { */
   /* opacity: 0.9; */
   /* background-color: rgba(255, 255, 255, 0.9); */
-}
+/* } */
 nav .collapse-social {
   display: none;
 }
