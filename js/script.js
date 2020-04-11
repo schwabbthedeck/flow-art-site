@@ -1,4 +1,4 @@
-//
+// main js file
 
 $(document).ready(function () {
   // Background image
@@ -42,11 +42,14 @@ $(document).ready(function () {
   //     }
   //   }
   // });
+
+  // add scrolling to all links on the page
   $('a.scroll-link').on('click', function (e) {
     e.preventDefault();
     scrollTo($(this), $('nav').outerHeight());
   });
 
+  // scroll function for navigation
   function scrollTo(clickedLink, navHeight) {
     var elementClass = clickedLink.attr('href').replace('#', '.');
     var scrollToLocation = 0;
@@ -61,5 +64,6 @@ $(document).ready(function () {
       });
     }
   };
+
   
 });

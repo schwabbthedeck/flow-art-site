@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flow Creative Anna | Flow Art by Anna</title>
-  <meta name="description" content="Flow Art made by Anna. Based in Pittsburgh, PA" >
+  <meta name="description" content="Flow Art made by Anna. Based in Pittsburgh, PA">
   <meta name="keywords" content="flow art,flow,custom art,acrylic,anna,pittsburgh">
   <meta name="robots" content="index,follow">
   <!-- favicons -->
@@ -34,9 +34,15 @@
   <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Bad+Script|Open+Sans&display=swap" rel="stylesheet">
 
+  <!-- React -->
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+
   <!-- Custom -->
   <link rel="stylesheet" href="css/main.css">
   <script src="js/script.js"></script>
+
+
 </head>
 
 <body>
@@ -130,12 +136,74 @@
   <div class="art-section for-sale-container">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 offset-md-2">
+        <div class="col-md-12">
           <h1>Art for Sale</h1>
-          <div>
-            <p>Currently I'm working on creating more art. In the mean time, feel free to browse my previous work. I
-              also do custom work. You can contact me via <a href="mailto:flowcreativeanna@gmail.com">email</a> to
-              discuss custom work.</p>
+          <div>To purchase, please email <a href="mailto:flowcreativeanna@gmail.com">flowcreativeanna@gmail.com</a> </div>
+          <div style="font-size: 0.9rem;">Prices include shipping costs</div>
+          <div class="art-cards">
+            <div class="artWorkCard" data-photopath="artwork-images/blueBubbles.jpg"
+              data-description="Painting #1" data-size="11 x 14 Stretched Canvas" data-price="$40">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/allTheColors.jpg"
+              data-description="Painting #2" data-size="8 x 8 Canvas Board" data-price="$15">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/blueCoasterSet.jpg"
+              data-description="Coasters #1" data-size="Set of 4" data-price="$25">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/blackAndColors.jpg"
+              data-description="Painting #3" data-size="5 x 7 Stretched Canvas" data-price="$15">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/blackDots.jpg"
+              data-description="Painting #4" data-size="8 x 10 Canvas Board" data-price="$15">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/bluePuddle.jpg"
+              data-description="Painting #5" data-size="8 x 10 Stretched Canvas" data-price="$20">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/pastelAndSpots.jpg"
+              data-description="Painting #6" data-size="8 x 10 Stretched Canvas" data-price="$20">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/pastelsForDays.jpg"
+              data-description="Painting #7" data-size="11 x 14 Stretched Canvas" data-price="$40">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/shiney.jpg"
+              data-description="Painting #8" data-size="5 x 7 Stretched Canvas" data-price="$15">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/whiteSpots.jpg"
+              data-description="Painting #9" data-size="8 x 10 Canvas Board" data-price="$15">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/bluesAndDots.jpg"
+              data-description="Painting #10" data-size="5 x 7 Stretched Canvas" data-price="$15">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/blueSwirlCoasters.jpg"
+              data-description="Coasters #2" data-size="Set of 4" data-price="$25">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/flowerPower.jpg"
+              data-description="Painting #11" data-size="10 x 10 Stretched Canvas" data-price="$25">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/greenSwirl.jpg"
+              data-description="Painting #12" data-size="8 x 10 Stretched Canvas" data-price="$20">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/pinkWood.jpg"
+              data-description="Painting #13" data-size="6 x 6 Wood Board" data-price="$15">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/greenWood.jpg"
+              data-description="Painting #14" data-size="5 x 7 Wood Board" data-price="$15">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/moreColors.jpg"
+              data-description="Painting #15" data-size="5 x 7 Stretched Canvas" data-price="$15">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/red.jpg"
+              data-description="Painting #16" data-size="8 x 10 Stretched Canvas" data-price="$20">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/redCoasters.jpg"
+              data-description="Coasters #3" data-size="Set of 4" data-price="$25">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/setOf2longs.jpg"
+              data-description="Painting #17" data-size="Two 10 x 20 Stretched Canvases" data-price="$60">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/swiped.jpg"
+              data-description="Painting #18" data-size="11 x 14 Wood Canvas" data-price="$50">
+            </div>
           </div>
         </div>
       </div>
@@ -146,20 +214,19 @@
   <div class="art-section past-work-container">
     <div class="container">
       <div class="row">
-        <div class="col-md-10 offset-md-1">
+        <div class="col-md-12">
           <h1>Past Art Work</h1>
-          <!-- <div class="art-cards">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="./artwork-images/Coasters set of 4 blue and pink all.jpg" alt="Set of pink and blue coasters">
-              <div class="card-body">
-                <h5 class="card-title">Set of 4 Coasters</h5>
-                <p class="card-text">A set of four coasters blue and pink in color. Sealed for water protection. Cork bottom.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+          <div class="art-cards">
+            <div class="artWorkCard" data-photopath="artwork-images/collide.jpg"
+              data-description="Past Painting #1" data-size="20 x 16 Stretched Canvas" data-price="">
             </div>
-
-          </div> -->
-          <div>I'm currently working on uploading some of my previous work!</div>
+            <div class="artWorkCard" data-photopath="artwork-images/necklace.jpg"
+              data-description="Necklace" data-size="Necklace on 16 inch chain" data-price="">
+            </div>
+            <div class="artWorkCard" data-photopath="artwork-images/waves.jpg"
+            data-description="Past Painting #2" data-size="20 x 16 Stretched Canvas" data-price="">
+          </div>
+          </div>
         </div>
       </div>
     </div>
@@ -177,7 +244,7 @@
                 href="mailto:flowcreativeanna@gmail.com">flowcreativeanna@gmail.com</a> or on any social media!
             </div>
             <div>
-              Also, if you have any questions or custom requests, feel free to reach out as well.
+              If you have any questions or custom requests, feel free to reach out as well.
             </div>
           </div>
         </div>
@@ -207,13 +274,14 @@
         </div>
       </div>
     </div>
-  
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
       <a href="https://janeschwab.co/" target="_blank">janeschwab.co</a>
     </div>
   </footer>
 
-
+  <!-- Load react component -->
+  <script src="js/artWorkImages.js"></script>
 </body>
 
 </html>

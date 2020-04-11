@@ -83,9 +83,42 @@ nav .social-icons span:hover a{
   /* margin-top: 75px; */
 }
 
-.card {
-  color: #253035;
+/* art work image card */
+.art-cards {
+  margin: 0 auto;
 }
+.artWorkCard {
+  display: inline-block;
+  background-color: rgba(255,255,255,0.25);
+  margin: 10px 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.main-art-container {
+  width: 18em;
+}
+.main-art-container .image-container {
+  width: 286px;
+  height: 180px;
+}
+.main-art-container .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+.main-art-container .info-container {
+  padding: 5px;
+}
+
+.main-art-container button {
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  background-color: #f8f9fa;
+}
+
 
 /* Contact */
 .contact-container {
